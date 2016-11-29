@@ -1,0 +1,8 @@
+<h1>{{ metadata.loc[game_id,'name'] }}</h1>
+<a href="https://boardgamegeek.com/boardgame/{{ game_id }}"><img src="{{ metadata.loc[game_id, 'image'] }}" width="300px"></a>
+<h2>Similar games</h2>
+<ul>
+{% for (similar_game_id, similarity) in similar_games %}
+    <li style="float:left; margin:1em;"><div style="text-align: center;"><a href="{{ similar_game_id }}"><img src="{{ metadata.loc[similar_game_id, 'thumbnail'] }}"><br>{{ metadata.loc[similar_game_id, 'name'] }}</a></div></li>
+{% endfor %}
+</ul>

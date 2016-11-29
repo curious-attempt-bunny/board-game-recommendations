@@ -1,0 +1,7 @@
+<h1>Board Game Recommendations</h1>
+<p>Start browsing similar games from here:</p>
+<ul>
+{% for game_id in games %}
+    <li style="float:left; margin:1em;"><div style="text-align: center;"><a href="boardgame/{{ game_id }}"><img src="{{ metadata.loc[game_id, 'thumbnail'] }}"><br>{{ metadata.loc[game_id, 'name'] }}</a></div></li>
+{% endfor %}
+</ul>
