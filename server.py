@@ -26,5 +26,5 @@ def boardgame(game_id):
     return render_template('boardgame.html', game_id=game_id, similar_games = zip(similar_games.index.values.astype(int), similar_games.values), metadata=metadata)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0')
 
