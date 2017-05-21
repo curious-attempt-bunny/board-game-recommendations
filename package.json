@@ -1,0 +1,24 @@
+{
+  "name": "board-game-recommendations",
+  "version": "1.0.0",
+  "description": "pip install pandas numpy requests     python server.py &     open http://http://127.0.0.1:5000/",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack -d --watch",
+    "prod": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/curious-attempt-bunny/board-game-recommendations.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/curious-attempt-bunny/board-game-recommendations/issues"
+  },
+  "homepage": "https://github.com/curious-attempt-bunny/board-game-recommendations#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^2.5.1"
+  }
+}
